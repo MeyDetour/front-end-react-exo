@@ -1,0 +1,17 @@
+.participantLine {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  .remove,
+  .add {
+    padding: 5px 18px;
+    border: 0;
+  }
+  .remove {
+    background: #ffefef;
+  }
+  .add {
+    background: #dfffdf;
+  }
+}

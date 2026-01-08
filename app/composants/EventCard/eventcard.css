@@ -1,0 +1,53 @@
+.eventCard {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  aspect-ratio: 1 / 0.45;
+  border: 1px solid #f4f4f4;
+  border-radius: 8px;
+  box-shadow: #00000021 0 0 24px 1px;
+  clip-path: border-box;
+  margin-bottom: 2%;
+  text-decoration: none;
+  color: black;
+  h2 {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  img {
+    width: 30%;
+    object-fit: cover;
+    height: 100%;
+  }
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 13px;
+
+   
+  }
+}
+
+.eventCard.little {
+  aspect-ratio: 1 / 0.25;
+  margin-bottom: 10px;
+  width: 100%;
+  background: white;
+
+  h2 {
+    font-size: 15px;
+    margin: 5px;
+  }
+ 
+}
+@media only screen and (max-width: 600px) {
+  .eventCard {
+    width: 100%;
+    margin-bottom: 50px;
+    h2 {
+      font-size: 15px;
+    }
+  }
+ 
+}

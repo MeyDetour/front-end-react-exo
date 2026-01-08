@@ -1,0 +1,22 @@
+.statsPage {
+    display: flex
+;
+flex-direction: column;
+gap: 20px;
+  .containerStat {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+  }
+
+  .firstLine{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+    >div{
+        width: 50%;
+    }
+  }
+}

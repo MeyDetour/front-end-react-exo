@@ -1,0 +1,75 @@
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style-type: none;
+  }
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px 10px 20px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e6227d, #ec12f3, #9834db, #9b59b6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.header-title h1 {
+  font-size: 1.8em;
+  color: #2c3e50;
+  margin: 0;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 1.1em;
+  color: #7f8c8d;
+  margin: 5px 0 0 0;
+  font-weight: 400;
+}
+
+.header-line {
+  height: 6px;
+  background: linear-gradient(90deg, #750e68 0%, #ac1962 50%, #8f143d 100%);
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .header-title h1 {
+    font-size: 1.4em;
+  }
+
+  .subtitle {
+    font-size: 0.95em;
+  }
+
+  .logo-circle {
+    width: 60px;
+    height: 60px;
+  }
+}

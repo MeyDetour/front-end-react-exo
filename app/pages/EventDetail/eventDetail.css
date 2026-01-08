@@ -1,0 +1,44 @@
+.eventDetailPage {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-around;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  img {
+    width: 40%;
+  }
+
+  .buttonContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-block: 48px;
+
+    a,
+    button {
+      background: gainsboro;
+      text-decoration: none;
+      color: black;
+      padding: 5px 32px;
+      border: 0;
+    }
+
+    a {
+      background: #ffdc8c;
+    }
+    a:hover {
+      background: #ffe5aa;
+    }
+    button {
+      background: #ff8080;
+    }
+    button:hover {
+      background: #e46868;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.participantsPage {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding-block: 87px;
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    .participants-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      >div{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+      }
+    }
+    .form-container {
+      width: 40%;
+    }
+  }
+}

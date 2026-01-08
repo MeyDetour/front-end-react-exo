@@ -1,0 +1,42 @@
+.eventsPage {
+  .wrapper {
+    width: 100%;
+
+    width: 100%;
+    justify-content: start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+  }
+  .filtrers {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-block: 20px;
+  }
+
+  .newButton {
+    background: #ffbb3b;
+    color: black;
+    text-decoration: none;
+    padding: 9px;
+    border-radius: 4px;
+  }
+
+  form {
+    input {
+      height: 100%;
+      box-sizing: border-box;
+    }
+    button {
+      height: 100%;
+      margin-left: 6px;
+      border: 0;
+      
+    }
+    button:hover{
+        background: #dfc7c7;
+      }
+  }
+}

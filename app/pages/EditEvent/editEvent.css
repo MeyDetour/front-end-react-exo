@@ -1,0 +1,14 @@
+.editEventPage {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  padding-block: 87px;
+  justify-content: space-between;
+
+  .participantsWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+    
+}

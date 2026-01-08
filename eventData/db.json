@@ -1,0 +1,256 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "name": "Conférence Tech Horizon",
+      "date": "2026-03-15",
+      "location": "Paris, Station F",
+      "image": "/images/conference.png",
+      "participantsId": [
+        "3",
+        "4",
+        "7",
+        "89ffea27-c16a-4775-846d-82d603632a96",
+        "677bb31c-a835-4b42-8cba-dff634e5793d",
+        "10"
+      ],
+      "status": "incomming",
+      "description": "Une journée dédiée aux innovations en intelligence artificielle et développement durable.",
+      "participants": [
+        {
+          "id": "89ffea27-c16a-4775-846d-82d603632a96",
+          "nom": "jngerkjng",
+          "prenom": "igrennke",
+          "mail": "jnegkkgen",
+          "telephone": "kngr"
+        },
+        {
+          "id": "677bb31c-a835-4b42-8cba-dff634e5793d",
+          "nom": "Last name",
+          "prenom": "First name here",
+          "mail": "example@gmail.com",
+          "telephone": "01 23 45 67 89"
+        },
+        {
+          "id": "10",
+          "nom": "Bonnet",
+          "prenom": "Léa",
+          "mail": "l.bonnet@email.com",
+          "telephone": "0688990011"
+        },
+        {
+          "id": "71c64567-bca9-4ef1-bc35-d10d6726b05a",
+          "nom": "truuccc",
+          "prenom": "truuccc",
+          "mail": "truuccc",
+          "telephone": "truuccc"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Atelier Design Thinking",
+      "date": "2026-01-07",
+      "location": "Lyon, Hub Créatif",
+      "image": "/images/atelier_design_thinking.png",
+      "participantsId": [
+        "6",
+        "5"
+      ],
+      "status": "progress",
+      "description": "Session intensive pour apprendre à résoudre des problèmes complexes par le design."
+    },
+    {
+      "id": "3",
+      "name": "Hackathon",
+      "date": "2025-12-20",
+      "location": "Bordeaux, Espace Darwin",
+      "image": "/images/heckaton.png",
+      "participantsId": [
+        "9",
+        "1",
+        "2"
+      ],
+      "status": "done",
+      "description": "Compétition de 48h pour créer des outils de gestion de projet innovants."
+    },
+    {
+      "id": "4",
+      "name": "Meetup React & TypeScript",
+      "date": "2026-02-10",
+      "location": "Nantes, Quartier de la Création",
+      "participantsId": [
+        "1",
+        "8",
+        "5"
+      ],
+      "image": "/images/meetup.png",
+      "status": "incomming",
+      "description": "Échanges et retours d'expérience sur les meilleures pratiques du développement front-end moderne."
+    },
+    {
+      "id": "5",
+      "name": "Salon du Freelancing",
+      "image": "/images/freelance.png",
+      "date": "2026-04-05",
+      "location": "Marseille, Palais des Congrès",
+      "participantsId": [
+        "5",
+        "6"
+      ],
+      "status": "incomming",
+      "description": "Rencontre annuelle des travailleurs indépendants et entrepreneurs du numérique."
+    },
+    {
+      "id": "27eef76c-2d71-431d-84e4-55ba0b5849d4",
+      "name": "paaaaaazfe,ezf,le",
+      "location": "reeee",
+      "description": "graaaaaaa",
+      "date": "2025-11-19",
+      "image": "",
+      "participantsId": [],
+      "status": "incomming",
+      "participants": null
+    },
+    {
+      "id": "b51bc141-f600-4af5-9fb7-b0df0d388aaa",
+      "name": "Event name",
+      "location": "Paris",
+      "description": "Your description",
+      "date": "2026-01-18",
+      "image": "",
+      "participantsId": [],
+      "status": "incomming",
+      "participants": null
+    },
+    {
+      "id": "c8ebe224-a19d-4e52-ab17-9ecb96b38992",
+      "name": "Event name",
+      "location": "Paris",
+      "description": "Your description",
+      "date": "2026-01-18",
+      "image": "",
+      "participantsId": [],
+      "status": "incomming",
+      "participants": null
+    },
+    {
+      "id": "4d08d67e-a040-49ec-aeee-c9440b925567",
+      "name": "Event name",
+      "location": "Paris",
+      "description": "Your description",
+      "date": "2026-01-03",
+      "image": "",
+      "participantsId": [],
+      "status": "incomming",
+      "participants": null
+    }
+  ],
+  "participants": [
+    {
+      "id": "1",
+      "nom": "Dupont",
+      "prenom": "Jean",
+      "mail": "j.dupont@email.com",
+      "telephone": "0601020304"
+    },
+    {
+      "id": "2",
+      "nom": "Martin",
+      "prenom": "Alice",
+      "mail": "a.martin@email.com",
+      "telephone": "0611223344"
+    },
+    {
+      "id": "3",
+      "nom": "Lefebvre",
+      "prenom": "Thomas",
+      "mail": "t.lefebvre@email.com",
+      "telephone": "0788990011"
+    },
+    {
+      "id": "4",
+      "nom": "Moreau",
+      "prenom": "Camille",
+      "mail": "c.moreau@email.com",
+      "telephone": "0622334455"
+    },
+    {
+      "id": "5",
+      "nom": "Petit",
+      "prenom": "Lucas",
+      "mail": "l.petit@email.com",
+      "telephone": "0633445566"
+    },
+    {
+      "id": "6",
+      "nom": "Roux",
+      "prenom": "Emma",
+      "mail": "e.roux@email.com",
+      "telephone": "0644556677"
+    },
+    {
+      "id": "7",
+      "nom": "Garcia",
+      "prenom": "Hugo",
+      "mail": "h.garcia@email.com",
+      "telephone": "0655667788"
+    },
+    {
+      "id": "8",
+      "nom": "Morin",
+      "prenom": "Chloé",
+      "mail": "c.morin@email.com",
+      "telephone": "0666778899"
+    },
+    {
+      "id": "9",
+      "nom": "Fournier",
+      "prenom": "Nathan",
+      "mail": "n.fournier@email.com",
+      "telephone": "0677889900"
+    },
+    {
+      "id": "10",
+      "nom": "Bonnet",
+      "prenom": "Léa",
+      "mail": "l.bonnet@email.com",
+      "telephone": "0688990011"
+    },
+    {
+      "id": "8a6d2384-170a-4fc7-8afa-74402d741007",
+      "nom": "Last name",
+      "prenom": "First name here",
+      "mail": "example@gmail.com",
+      "telephone": "01 23 45 67 89"
+    },
+    {
+      "id": "6ab0aa4d-aa00-48c2-b220-67f620efdcf2",
+      "nom": "Last name",
+      "prenom": "First name here",
+      "mail": "example@gmail.com",
+      "telephone": "01 23 45 67 89"
+    },
+    {
+      "id": "677bb31c-a835-4b42-8cba-dff634e5793d",
+      "nom": "Last name",
+      "prenom": "First name here",
+      "mail": "example@gmail.com",
+      "telephone": "01 23 45 67 89"
+    },
+    {
+      "id": "1e19eea9-8fc5-4a4d-8e79-76a536195ca6",
+      "nom": "Last namerenklrgn",
+      "prenom": "First name here",
+      "mail": "example@gmail.com",
+      "telephone": "01 23 45 67 89"
+    },
+    {
+      "id": "89ffea27-c16a-4775-846d-82d603632a96",
+      "nom": "jngerkjng",
+      "prenom": "igrennke",
+      "mail": "jnegkkgen",
+      "telephone": "kngr"
+    }
+  ]
+}
