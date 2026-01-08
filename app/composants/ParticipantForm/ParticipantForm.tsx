@@ -1,9 +1,8 @@
-import type { FormEventHandler } from "react";
-import { useState, useEffect , useContext} from "react";
-import { createData, editData } from "../../api/api";
+ 
+import { useState, useEffect , useContext} from "react"; 
 import type { ParticipantType } from "~/types/participant.type";
 import { NotificationContext } from "~/Context/NotificationContext";
-
+import { ApiContext } from "~/Context/ApiContext";
 import { v4 as uuidv4 } from "uuid";
 
 export default function ParticipantForm({
@@ -26,6 +25,12 @@ export default function ParticipantForm({
   const context = useContext(NotificationContext);
   if (!context) return;
   const { showNotification } = context;
+
+
+
+  const contextApi = useContext(ApiContext);
+  if (!contextApi) return;
+  const { editData,createData } = contextApi;
 
   useEffect(() => {
     if (participant) {

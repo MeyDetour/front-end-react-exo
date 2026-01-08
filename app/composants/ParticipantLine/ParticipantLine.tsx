@@ -1,9 +1,9 @@
 import type { ParticipantType } from "~/types/participant.type";
-import { editData, getData } from "../../api/api";
 import type { EventType } from "~/types/event.type";
-import { useNavigate } from "react-router";
-import { useState } from "react";
+import { useState ,useContext  } from "react";
 import "./participantLine.css";
+import { ApiContext } from "~/Context/ApiContext";
+
 
 export default function ParticipantLine({
   p,
@@ -20,6 +20,10 @@ export default function ParticipantLine({
 }) {
   const [participantOFEvent, SetParticipantOFEvent] =
     useState<boolean>(isParticipantOfEvent);
+
+  const contextApi = useContext(ApiContext);
+  if (!contextApi) return;
+  const { editData,getData } = contextApi;
 
   async function applyUpdate(data: EventType) {
     try {

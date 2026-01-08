@@ -1,12 +1,12 @@
-import { useEffect, useState , useContext} from "react";
-import { useNavigate, useParams } from "react-router";
-import { editData, getData } from "../../api/api";
+import { useEffect, useState, useContext } from "react";
+import { useNavigate, useParams } from "react-router"; 
 import type { EventType } from "~/types/event.type";
 import "./editEvent.css";
 import EventForm from "../../composants/EventForm/EventForm";
 import ParticipantLine from "~/composants/ParticipantLine/ParticipantLine";
 import type { ParticipantType } from "~/types/participant.type";
 import { NotificationContext } from "~/Context/NotificationContext";
+import { ApiContext } from "~/Context/ApiContext";
 
 export default function EditEvent() {
   const { id } = useParams<string>();
@@ -15,9 +15,15 @@ export default function EditEvent() {
   const [participants, setParticipants] = useState<ParticipantType[] | null>(
     null
   );
+
   const context = useContext(NotificationContext);
   if (!context) return;
   const { showNotification } = context;
+
+  const contextApi = useContext(ApiContext);
+  if (!contextApi) return;
+  const { editData,getData } = contextApi;
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -128,7 +134,7 @@ export default function EditEvent() {
             <h2>Participants</h2>
             {event.participants.map((p) => (
               <ParticipantLine
-                key={p.id} 
+                key={p.id}
                 p={p}
                 context="edit"
                 isParticipantOfEvent={true}

@@ -1,8 +1,8 @@
 import "./stats.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState , useContext} from "react";
 import type { EventType } from "~/types/event.type";
-import { getData } from "~/api/api";
 import EventCard from "../../composants/EventCard/EventCard";
+import { ApiContext } from "~/Context/ApiContext";
 
 export default function Events() {
   const [events, setEvents] = useState<EventType[]>([]);
@@ -11,6 +11,11 @@ export default function Events() {
   const [eventMostPopular, setEventMostPopular] = useState<EventType | null>(
     null
   );
+
+  const contextApi = useContext(ApiContext);
+  if (!contextApi) return;
+  const { getData } = contextApi;
+
   async function fetchEvent(path: string) {
     try {
       const eventsData = await getData(path);

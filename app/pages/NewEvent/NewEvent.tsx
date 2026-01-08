@@ -1,17 +1,24 @@
 import { useRef, useState, useContext } from "react";
-import { useNavigate } from "react-router";
-import { createData } from "../../api/api";
+import { useNavigate } from "react-router"; 
 import type { EventType } from "~/types/event.type";
 import { v4 as uuidv4 } from "uuid";
 import "./newEvent.css";
-import EventForm from "../../composants/EventForm/EventForm"; 
+import EventForm from "../../composants/EventForm/EventForm";
 import { NotificationContext } from "~/Context/NotificationContext";
+import { ApiContext } from "~/Context/ApiContext";
 
 export default function NewEvent() {
   const [error, setError] = useState<string | null>(null);
+
+
+  const contextApi = useContext(ApiContext);
+  if (!contextApi) return;
+  const { createData } = contextApi;
+
   const context = useContext(NotificationContext);
   if (!context) return;
   const { showNotification } = context;
+
   const navigate = useNavigate();
   async function createEvent(path: string, data: EventType) {
     try {

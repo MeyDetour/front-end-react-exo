@@ -1,11 +1,11 @@
 import { useParams, Link, useNavigate 
 } from "react-router";
 import { useEffect, useState , useContext } from "react";
-import type { EventType } from "~/types/event.type";
-import { removeData, getData } from "~/api/api";
+import type { EventType } from "~/types/event.type"; 
 import "./eventDetail.css";
 import ParticipantLine from "~/composants/ParticipantLine/ParticipantLine";
 import { NotificationContext } from "~/Context/NotificationContext";
+import { ApiContext } from "~/Context/ApiContext";
 
 
 export default function EventDetail() {
@@ -16,6 +16,12 @@ export default function EventDetail() {
   const context = useContext(NotificationContext);
   if (!context) return;
   const { showNotification } = context;
+
+
+  const contextApi = useContext(ApiContext);
+  if (!contextApi) return;
+  const { getData ,removeData } = contextApi;
+
   useEffect(() => {
     const fetchEvent = async () => {
       try {

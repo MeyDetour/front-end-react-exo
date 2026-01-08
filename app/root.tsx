@@ -11,6 +11,7 @@ import "./app.css";
 import Header from "./composants/Header/Header";
 import Footer from "./composants/Footer/Footer"; 
 import NotificationProvider from "app/Context/NotificationContext";
+import ApiContextProvider from "./Context/ApiContext";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -35,11 +36,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        <ApiContextProvider>
         <NotificationProvider>
           <Header />
           <main>{children}</main>
           <Footer />!
         </NotificationProvider>
+        </ApiContextProvider>
         <ScrollRestoration />
         <Scripts />
       </body>

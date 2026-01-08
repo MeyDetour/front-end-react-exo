@@ -1,16 +1,19 @@
 import "./participants.css";
-import { useEffect, useState  , useContext} from "react";
+import { useEffect, useState, useContext } from "react";
 import type { ParticipantType } from "~/types/participant.type";
 import ParticipantLine from "~/composants/ParticipantLine/ParticipantLine";
 import ParticipantForm from "../../composants/ParticipantForm/ParticipantForm";
-import { getData, removeData, editData } from "../../api/api";
+import { ApiContext } from "~/Context/ApiContext";
 import { NotificationContext } from "~/Context/NotificationContext";
-
 
 export default function Participants() {
   const [participants, setParticipants] = useState<ParticipantType[]>([]);
   const [participantToEdit, setPartitipantToEdit] =
     useState<ParticipantType | null>(null);
+
+  const contextApi = useContext(ApiContext);
+  if (!contextApi) return;
+  const { getData , removeData,editData } = contextApi;
 
   const context = useContext(NotificationContext);
   if (!context) return;
@@ -32,10 +35,10 @@ export default function Participants() {
       const participants = await removeData("participants/" + id);
       setParticipants((prev) => prev.filter((p) => p.id != id));
       const events = await getData("events");
-        showNotification({
-          text: "Participant removed",
-          style: "success",
-        });
+      showNotification({
+        text: "Participant removed",
+        style: "success",
+      });
       for (let e of events) {
         if (e.participantsId.includes(id)) {
           e.participantsId = e.participantsId.filter((elt) => elt != id);

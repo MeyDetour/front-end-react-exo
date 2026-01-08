@@ -1,15 +1,19 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useContext } from "react";
 import { Link } from "react-router";
 import "./events.css";
 import type { EventType } from "~/types/event.type";
 import EventCard from "~/composants/EventCard/EventCard";
-import { getData } from "~/api/api";
+import { ApiContext } from "~/Context/ApiContext";
 
 export default function Events() {
   const [events, setEvents] = useState<EventType[]>([]);
 
   const selectRef = useRef(null);
   const searchRef = useRef(null);
+
+  const contextApi = useContext(ApiContext);
+  if (!contextApi) return;
+  const { getData } = contextApi;
 
   async function fetchEvent(path: string) {
     try {
@@ -85,7 +89,7 @@ export default function Events() {
       </div>
 
       <div className="wrapper">
-        {events && events.map((event) => <EventCard event={event} />)}
+        {events && events.map((event) => <EventCard format={"big"} event={event} />)}
       </div>
     </div>
   );
