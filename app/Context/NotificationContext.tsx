@@ -25,7 +25,7 @@ const NotificationProvider: React.FC<{ children: React.ReactNode }> = ({
     >
       {
         notification &&
-        <div className="toast">
+        <div className={"toast "+notification.style}>
          <span>{notification.text}</span> 
          <button onClick={removeNotification}>X</button>
         </div>

@@ -1,5 +1,4 @@
- 
-import { useState, useEffect , useContext} from "react"; 
+import { useState, useEffect, useContext } from "react";
 import type { ParticipantType } from "~/types/participant.type";
 import { NotificationContext } from "~/Context/NotificationContext";
 import { ApiContext } from "~/Context/ApiContext";
@@ -26,11 +25,9 @@ export default function ParticipantForm({
   if (!context) return;
   const { showNotification } = context;
 
-
-
   const contextApi = useContext(ApiContext);
   if (!contextApi) return;
-  const { editData,createData } = contextApi;
+  const { editData, createData } = contextApi;
 
   useEffect(() => {
     if (participant) {
@@ -100,10 +97,16 @@ export default function ParticipantForm({
         id: uuidv4(),
       };
       const res = await createData("participants", newP);
-       showNotification({
-          text: "Participant created",
-          style: "success",
-        });
+      setForm({
+        prenom: "",
+        nom: "",
+        mail: "",
+        telephone: "",
+      });
+      showNotification({
+        text: "Participant created",
+        style: "success",
+      });
 
       setParticipants((prev: ParticipantType[]) => [...prev, newP]);
     } catch (error: any) {

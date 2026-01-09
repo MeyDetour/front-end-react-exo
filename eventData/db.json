@@ -8,7 +8,6 @@
       "image": "/images/conference.png",
       "participantsId": [
         "3",
-        "4",
         "7",
         "89ffea27-c16a-4775-846d-82d603632a96",
         "677bb31c-a835-4b42-8cba-dff634e5793d",
@@ -144,6 +143,17 @@
       "participantsId": [],
       "status": "incomming",
       "participants": null
+    },
+    {
+      "id": "d05b55fb-85af-474b-8fa3-2b616b3b0621",
+      "name": "Event name,f",
+      "location": "Paris",
+      "description": "Your description",
+      "date": "2026-01-03",
+      "image": "",
+      "participantsId": [],
+      "status": "incomming",
+      "participants": []
     }
   ],
   "participants": [
@@ -167,13 +177,6 @@
       "prenom": "Thomas",
       "mail": "t.lefebvre@email.com",
       "telephone": "0788990011"
-    },
-    {
-      "id": "4",
-      "nom": "Moreau",
-      "prenom": "Camille",
-      "mail": "c.moreau@email.com",
-      "telephone": "0622334455"
     },
     {
       "id": "5",
@@ -251,6 +254,41 @@
       "prenom": "igrennke",
       "mail": "jnegkkgen",
       "telephone": "kngr"
+    },
+    {
+      "id": "03843b52-1c65-496e-abf6-dbe293e982a7",
+      "nom": "lfkgnzelf",
+      "prenom": "r",
+      "mail": "nfzklzef",
+      "telephone": "f"
+    },
+    {
+      "id": "6fdecb84-4df0-4e62-a68a-dcc504715c2b",
+      "nom": "lfkgnzelf",
+      "prenom": "r",
+      "mail": "nfzklzef",
+      "telephone": "f"
+    },
+    {
+      "id": "7f8f9607-4fd1-46e5-8dfa-b89cb0861031",
+      "nom": "lfkgnzelf",
+      "prenom": "r",
+      "mail": "nfzklzef",
+      "telephone": "f"
+    },
+    {
+      "id": "f521a079-d025-42a2-bd3c-0bd20dc38cbc",
+      "nom": "lfkgnzelf",
+      "prenom": "r",
+      "mail": "nfzklzef",
+      "telephone": "f"
+    },
+    {
+      "id": "bfd1630c-6920-48df-a2bb-a98243c52b61",
+      "nom": "lfkgnzelf",
+      "prenom": "r",
+      "mail": "nfzklzef",
+      "telephone": "f"
     }
   ]
 }
