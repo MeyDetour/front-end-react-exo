@@ -5,10 +5,9 @@
   padding-block: 87px;
   justify-content: space-between;
 
-  .participantsWrapper{
+  .participantsWrapper {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-    
 }

@@ -207,3 +207,7 @@ pre code {
 .toast.success {
   background: #a4f9a4;
 }
+
+.toast.error {
+  background: #da1717;
+}

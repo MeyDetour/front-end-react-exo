@@ -36,13 +36,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <ApiContextProvider>
         <NotificationProvider>
+        <ApiContextProvider>
           <Header />
           <main>{children}</main>
           <Footer />!
-        </NotificationProvider>
         </ApiContextProvider>
+        </NotificationProvider>
         <ScrollRestoration />
         <Scripts />
       </body>
